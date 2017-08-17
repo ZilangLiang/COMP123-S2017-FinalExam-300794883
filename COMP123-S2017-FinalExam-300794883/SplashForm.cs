@@ -19,9 +19,24 @@ namespace COMP123_S2017_FinalExam_300794883
 {
     public partial class SplashForm : Form
     {
+        //PUBLIC PROPERTIES
+        public PickHighestCardForm PckHighestCardForm
+        {
+            get
+            {
+                return Program.
+            }
+        }
+
+
         public SplashForm()
         {
             InitializeComponent();
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            
         }
     }
 }
