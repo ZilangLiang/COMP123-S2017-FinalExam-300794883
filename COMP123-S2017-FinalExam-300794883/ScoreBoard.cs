@@ -64,9 +64,6 @@ namespace COMP123_S2017_FinalExam_300794883
 
         public ScoreBoard(TextBox scoreTextBox, TextBox timeTextBox, TextBox finalScoreTextbox)
         {
-            ScoreTextBox = scoreTextBox;
-            TimeTextBox = timeTextBox;
-            FinalScoreTextBox = finalScoreTextbox;
         }
         public static void UpdateTime()
         {

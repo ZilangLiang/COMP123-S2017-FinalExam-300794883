@@ -15,7 +15,7 @@ using System.Windows.Forms;
  * Date:August 17,2017
  * StudentID:300794883
  * Description:This is PickHighestCardForm
- * Version:version 0.1
+ * Version:version 0.2 - Added and changed content
  */
 
 namespace COMP123_S2017_FinalExam_300794883
@@ -25,6 +25,7 @@ namespace COMP123_S2017_FinalExam_300794883
         // PRIVATE INSTANCE VARIABLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         List<PictureBox> _dealtCardPictureBoxList;
         int _currentDealtCardIndex;
+        private ScoreBoard _scoreboard;
         PictureBox _currentClickedCard;
         Deck _deck;
         Hand _hand;
@@ -198,6 +199,8 @@ namespace COMP123_S2017_FinalExam_300794883
             DealButton.Enabled = true;
             this._enableDealtCards();
             this._hideFinalScore();
+            ScoreBoard.Score = 0;
+            ScoreBoard.Time = 30;
             UserMessageTextBox.Text = "Click the Deal Button!";
         }
 
@@ -272,7 +275,7 @@ namespace COMP123_S2017_FinalExam_300794883
                 this.CurrentClickedCard.BackColor = Color.Green;
                 UserMessageTextBox.Text = "You Got It!";
 
-                //Uncomment this --> ScoreBoard.Score += this.MaximumPoints;
+                ScoreBoard.Score += this.MaximumPoints;
 
                 DealButton.Enabled = true;
             }
@@ -358,7 +361,7 @@ namespace COMP123_S2017_FinalExam_300794883
         /// <param name="e"></param>
         private void CountDownTimer_Tick(object sender, EventArgs e)
         {
-            /* Uncomment THIS
+            
             ScoreBoard.UpdateTime();
             if (ScoreBoard.Time == 0)
             {
@@ -367,7 +370,7 @@ namespace COMP123_S2017_FinalExam_300794883
                 this._disableDealtCards();
                 this._showFinalScore();
             }
-            */
+            
         }
 
         /// <summary>
