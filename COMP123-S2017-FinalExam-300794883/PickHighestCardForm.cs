@@ -225,7 +225,9 @@ namespace COMP123_S2017_FinalExam_300794883
         private void PickHighestCardForm_Load(object sender, EventArgs e)
         {
             // Initialize ScoreBoard HERE
-
+            ScoreBoard.ScoreTextBox;
+            ScoreBoard.TimeTextBox;
+            ScoreBoard.FinalScoreTextBox;
             // Initialize the App Sounds
             this._buildDealtCardPictureBoxList();
             this._reset();
