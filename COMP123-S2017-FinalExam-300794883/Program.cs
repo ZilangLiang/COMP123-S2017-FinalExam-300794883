@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /*
- * Name:
- * Date:
- * StudentID:
- * Description:
- * Version:
+ * Name:Zilang Liang
+ * Date:August 17,2017
+ * StudentID:300794883
+ * Description:This is Program class
+ * Version:version 0.1
  */
 
 namespace COMP123_S2017_FinalExam_300794883
