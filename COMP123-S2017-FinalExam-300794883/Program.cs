@@ -9,7 +9,7 @@ using System.Windows.Forms;
  * Date:August 17,2017
  * StudentID:300794883
  * Description:This is Program class
- * Version:version 0.2 - Created an instance of the PickHighestCardForm object
+ * Version:version 0.3 -  change the Application.Run method to start the SplashForm
  */
 
 namespace COMP123_S2017_FinalExam_300794883
@@ -31,7 +31,7 @@ namespace COMP123_S2017_FinalExam_300794883
 
             //Instantiate a new object of type PickHighestCardForm
             pickhighestcardForm = new PickHighestCardForm();
-            Application.Run(new PickHighestCardForm());
+            Application.Run(new SplashForm());
         }
     }
 }
